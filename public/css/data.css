@@ -1,0 +1,268 @@
+/*分页的样式*/
+.nl_search_page{
+	width:100%;
+	min-height:40px;
+}
+
+.nl_search_page_container{
+	width:400px;
+	min-height:40px;
+	margin:0px auto;
+	text-align:center;
+	background-color:transparent;
+}
+
+.nl_search_page_container span{
+	margin-left:5px;
+}
+
+@media(max-width: 445px){
+	.nl_search_page_container{
+		width:100%;
+	}
+}
+
+.nl_main_info_container{
+	width:100%;
+	padding:15px 30px;
+	min-height:150px;
+	position:relative;
+	background-color:transparent;
+}
+
+.nl_main_info_img{
+	width:135px;
+	height:120px;
+	float:left;
+	position:relative;
+}
+
+.nl_main_info_img img{
+	width:120px;
+	height:120px;
+}
+
+.nl_main_info_content{
+	min-height:20px;
+	position:relative;
+	width:100%;
+}
+
+.nl_main_info_bm{
+	width:100%;
+	position:relative;
+	min-height:30px;
+	line-height:30px;
+	font-size:14px;
+	color:#333;
+}
+
+
+
+@media(max-width: 380px){
+	.nl_main_info_container{
+		padding:15px 15px;
+		padding-right:0px;
+	}
+	.nl_main_info_content{
+		padding-right:15px;
+	}
+}
+
+
+.nl_main_info_remind{
+	width:100%;
+	min-height:70px;
+	padding:15px 30px;
+}
+
+.nl_main_info_remind_content{
+	width:100%;
+	height:40px;
+	padding-left:15px;
+	line-height:40px;
+	border-left:4px solid #169ADA;
+	font-size:15px;
+}
+
+.nl_main_info_nutrition{
+	width:100%;
+	padding:5px 30px;
+	height:50px;
+	font-size:13px;
+}
+
+.nl_main_info_nutrition_left{
+	width:49%;
+	height:20px;
+	line-height:20px;
+	float:left;
+}
+
+.nl_main_info_nutrition_right{
+	width:49%;
+	height:20px;
+	line-height:20px;
+	float:right;
+}
+
+.nl_main_info_detail{
+	display:none;
+	width:100%;
+}
+
+.nl_main_info_detail_btn_container{
+	width:100%;
+	height:30px;
+	text-align:right;
+	line-height:30px;
+	font-size:13px;
+	padding:0px 30px;
+}
+
+.nl_main_info_detail_btn{
+	color:#0e90d2;
+	cursor:pointer;
+}
+
+.nl_main_info_detail_btn:hover{
+	opacity:0.9;
+}
+
+@media(max-width: 380px){
+	.nl_main_info_remind{
+		padding:15px 15px;
+	}
+
+	.nl_main_info_nutrition{
+		padding:5px 15px;
+	}
+
+	.nl_main_info_detail{
+		padding:0px 0px;
+	}
+
+	.nl_main_info_detail_btn_container{
+		padding:0px 15px;
+	}
+}
+
+.nl_menu_info_container{
+	width:100%;
+	min-height:50px;
+	padding:0px 30px;
+	background-color:transparent;
+}
+
+.nl_menu_info_stips{
+	width:100%;
+	min-height:30px;
+	line-height:30px;
+	font-size:14px;
+}
+
+.nl_menu_info_time{
+	width:100%;
+	min-height:40px;
+	font-size:14px;
+	line-height:40px;
+}
+
+.nl_menu_info_time_container{
+	width:100%;
+	min-height:40px;
+}
+
+.nl_menu_info_time_content_left{
+	width:49%;
+	min-height:40px;
+	overflow:hidden;
+	line-height:40px;
+	font-size:14px;
+	float:left;
+}
+
+.nl_menu_info_time_content_right{
+	width:49%;
+	min-height:40px;
+	overflow:hidden;
+	line-height:40px;
+	font-size:14px;
+	float:right;
+}
+
+.nl_menu_info_food{
+	width:100%;
+	min-height:50px;
+	font-size:14px;
+	line-height:40px;
+}
+
+.nl_menu_info_food_container{
+	width:100%;
+	min-height:40px;
+}
+
+.nl_menu_info_food_left{
+	width:49%;
+	min-height:40px;
+	float:left;
+}
+
+.nl_menu_info_food_right{
+	width:49%;
+	min-height:40px;
+	float:right;
+}
+
+@media(max-width: 380px){
+	.nl_menu_info_container{
+		padding:0px 15px;
+	}
+}
+
+@media(max-width: 449px){
+	.nl_menu_info_time_content_left{
+		float:none;
+		width:100%;
+	}
+	.nl_menu_info_time_content_right{
+		float:none;
+		width:100%;
+	}
+
+	.nl_menu_info_food_left{
+		float:none;
+		width:100%;
+	}
+
+	.nl_menu_info_food_right{
+		float:none;
+		width:100%;
+	}
+}
+
+.nl_menu_info_food_step{
+	width:100%;
+	position:relative;
+	min-height:137px;
+	padding:15px 0px;
+}
+
+.nl_menu_info_food_step_img{
+	width:205px;
+	height:107px;
+	float:left;
+	font-size:14px;
+}
+
+.nl_menu_info_food_step_img img{
+	width:190px;
+	height:107px;
+}
+
+.nl_menu_info_food_step_content{
+	width:100%;
+	min-height:30px;
+	line-height:30px;
+}

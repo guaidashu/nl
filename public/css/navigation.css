@@ -1,0 +1,400 @@
+
+.nl_head{
+	position:relative;
+	width:100%;
+	height:450px;
+	overflow:hidden;
+	background:-color:#ffffff;
+	/* 用background-image进行设置背景图片 */
+	/*background-image:url(./../images/nl/bg_nav_1.jpg);*/
+	/* 好处是我们可以清晰的知道以下的属性设置 */
+	/* 设置图片大小，cover就是覆盖整个容器，图片会自动按照比例伸缩 */
+	/*background-size:cover;*/
+	/* 设置背景图片的位置，center就是上下左右都居中，默认选这个 */
+	/*background-position:center center;*/
+	/* 设置图片是否平铺显示，因为一张背景就够了，所以就不平铺 */
+	/*background-repeat:no-repeat;*/
+}
+
+.nl_navigation_container{
+	position:relative;
+	z-index:5;
+	width:100%;
+	height:60px;
+	/* 用rgba来进行设置背景颜色，四个属性分别是
+	   红， 蓝， 绿， 透明度（0到1的区间）
+	   这样就可以有透明的效果（陈童鞋这些是给你备注的，方便观看）
+	 */
+	background-color:rgba(0, 0, 0, .4);
+}
+
+.nl_navigation{
+	/* 一般来说，我们把所有div都加上position:relative;的属性
+	   这样的话，之后子元素要进行设置position进行移动位置才会起效，
+	   为了避免出错，一般都加上
+	 */
+	position:relative;
+	width:100%;
+	height:60px;
+	background-color:transparent;
+}
+
+@media(min-width: 1380px){
+	.nl_navigation{
+		position:relative;
+		margin:0px auto;
+		width:1380px;
+		height:60px;
+		background-color:transparent;
+	}
+}
+
+
+.nl_logo{
+	position:absolute;
+	left:20px;
+	top:5px;
+	width:50px;
+	height:50px;
+	background-image:url(./../images/nl/nl_logo_1.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-position:center center;
+}
+
+.nl_nav_ul{
+	width:400px;
+	height:100%;
+	padding:0px;
+	margin:0px;
+	display:block;
+	float:right;
+}
+
+.nl_nav_ul .nl_nav_active{
+	background-color:rgba(80, 0, 0, .65);
+}
+
+.nl_nav_ul li{
+	width:100px;
+	height:100%;
+	background:transparent;
+	float:left;
+	color:#fff;
+	text-align:center;
+	font-size:14px;
+	line-height:60px;
+}
+
+.nl_nav_ul li:hover{
+	background-color:rgba(80, 0, 0, .65);
+}
+
+.nl_login{
+	display:block;
+	width:150px;
+	height:100%;
+	margin-left:100px;
+	margin-right:60px;
+	text-align:center;
+	line-height:60px;
+	float:right;
+	font-size:14px;
+	color:#fff;
+}
+
+.nl_login a{
+	color:#fff;
+}
+
+.nl_login a:hover{
+	color:#169ADA;
+}
+
+@media(max-width: 894px){
+	.nl_login{
+		margin-left:25px;
+		margin-right:20px;
+	}
+}
+
+@media(max-width: 672px){
+	.nl_nav_ul{
+		display:none;
+	}
+	.nl_login{
+		display:none;
+	}
+}
+
+
+/* moblie（手机样式开始） */
+
+.nl_meun{
+	width:50px;
+	height:50px;
+	float:right;
+	display:none;
+	position:relative;
+	top:5px;
+	margin-right:0px;
+}
+
+.doc-oc-js{
+	position:relative;
+	width:50px;
+	height:50px;
+	line-height:50px;
+	color:#fff;
+	text-align:center;
+	font-size:25px;
+}
+
+.doc-oc-js:hover{
+	color:#169ADA;
+}
+
+@media(max-width: 672px){
+	.nl_meun{
+		display:block;
+	}
+}
+
+@media(max-width: 358px){
+	.nl_meun{
+		top:5px;
+	}
+}
+
+.nl_nav_mobile_container_background{
+	background:#169ADA;
+}
+
+.am-list-self li{
+	background-color:#169ADA;
+	border:none;
+	color:#fff;
+}
+
+.am-list-self li a{
+	background-color:#169ADA;
+	color:#fff;
+}
+
+.am-list-self li a:hover{
+	color:yellow;
+}
+
+.nl_login_container{
+	width:100%;
+	height:100%;
+	text-align:center;
+	background-color:transparent;
+	border:none;
+}
+
+.nl_logo_container{
+	height:50px;
+	width:100%;
+	position:relative;
+}
+
+.nl_logo_img{
+	height:50px;
+	width:50px;
+	background:url(./../images/nl/nl_logo_1.png) no-repeat center center;
+	background-size:100% 100%;
+	position:relative;
+	top:0px;
+	left:8px;
+}
+
+/* 搜索框样式开始 */
+
+.nl_search_container{
+	position:relative;
+	z-index:5;
+	top:50%;
+	width:100%;
+	padding-left:15px;
+	padding-right:15px;
+	height:35px;
+}
+
+.nl_search_input{
+	width:450px;
+	height:35px;
+	margin:0px auto;
+	position:relative;
+}
+
+#nl_search_input{
+	width:100%;
+	height:100%;
+	border:none;
+	vertical-align:middle;
+	appearance:button;
+	-moz-appearance:button; /* Firefox */
+	-webkit-appearance:button; /* Safari 和 Chrome */
+	padding:0px 12px;
+	position:relative;
+	font-size:14px;
+	border-radius:5px;
+}
+
+#nl_search_btn{
+	width:60px;
+	height:35px;
+	position:relative;
+	display:none;
+}
+
+.nl_search_btn{
+	cursor:pointer;
+	width:35px;
+	height:35px;
+	background-color:transparent;
+	left:100%;
+	margin-left:-35px;
+	color:#800000;
+	line-height:35px;
+	text-align:center;
+	top:0px;
+	display:inline-block;
+	position:absolute;
+}
+
+/* 搜索框的宽度和页面宽度一致时就把宽度设置为100% */
+
+@media(max-width: 480px){
+	.nl_search_input{
+		width:100%;
+		height:35px;
+		margin:0px auto;
+		position:relative;
+	}
+	.nl_search_container{
+		top:30%;
+	}
+}
+
+.nl_navigation_carousel_1{
+	position:absolute;
+	width:100%;
+	z-index:1;
+	height:450px;
+	left:0px;
+	top:0px;
+	/* 用background-image进行设置背景图片 */
+	background-image:url(./../images/nl/bg_nav_1.jpg);
+	/* 好处是我们可以清晰的知道以下的属性设置 */
+	/* 设置图片大小，cover就是覆盖整个容器，图片会自动按照比例伸缩 */
+	background-size:cover;
+	/* 设置背景图片的位置，center就是上下左右都居中，默认选这个 */
+	background-position:center center;
+	/* 设置图片是否平铺显示，因为一张背景就够了，所以就不平铺 */
+	background-repeat:no-repeat;
+}
+
+.nl_navigation_carousel_2{
+	position:absolute;
+	width:100%;
+	z-index:2;
+	height:450px;
+	left:0px;
+	top:0px;
+	/*background-image:url(./../images/nl/bg_nav_2.jpg);*/
+	background-size:cover;
+	display:none;
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+
+.nl_navigation_carousel_3{
+	position:absolute;
+	width:100%;
+	z-index:3;
+	display:none;
+	left:0px;
+	top:0px;
+	height:450px;
+	/*background-image:url(./../images/nl/bg_nav_3.jpg);*/
+	background-size:cover;
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+
+.nl_navigation_mask{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:4;
+	background-color:rgba(0, 0, 0, .2);
+}
+
+
+#tanchuang{
+    position:fixed;
+    width:400px;
+    min-height:200px;
+    background-color:white;
+    top:50%;
+    left:50%;
+    z-index:10000;
+    padding:10px 20px;
+    margin-left:-200px;
+    margin-top:-150px;
+    display:none;
+}
+
+#tanchuang1{
+    position:fixed;
+    width:400px;
+    min-height:100px;
+    background-color:white;
+    top:50%;
+    left:50%;
+    z-index:10001;
+    padding:10px 20px;
+    margin-left:-200px;
+    margin-top:-100px;
+    display:none;
+}
+
+#tanchuang2{
+    position:fixed;
+    width:300px;
+    min-height:100px;
+    background-color:white;
+    top:50%;
+    left:50%;
+    z-index:10001;
+    padding:10px 20px;
+    margin-left:-200px;
+    margin-top:-100px;
+    display:none;
+}
+
+.bq{
+    border-radius:10px;
+    border: 1px solid lightgrey;
+    width: 50px;
+    padding: 0.1rem;
+    text-align: center;
+    font-size: 13px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.bq:hover{
+    border-color: #00b3ee;
+}
+
+#food_list{
+	height:200px;
+	overflow:auto;
+	/*overflow-x:hidden;*/
+}
